@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import useContentful from './components/useContentful';
 import Jumps from './components/Jumps';
+import {Routes, Route} from 'react-router-dom'
 
 function App() {
   const [jumps, setJumps] = useState([])
@@ -18,7 +19,10 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <Jumps jumps={jumps}/>
+        <Routes>
+          <Route path="/" element={<Home/>} />
+          <Route path="/jumps" element={<Jumps jumps={jumps}/>} />
+        </Routes>
       </header>
     </div>
   );
