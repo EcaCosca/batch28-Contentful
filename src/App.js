@@ -5,6 +5,7 @@ import useContentful from './components/useContentful';
 import Jumps from './components/Jumps';
 import {Routes, Route} from 'react-router-dom'
 import Home from './components/Home';
+import Nav from './components/Nav';
 
 function App() {
   const [jumps, setJumps] = useState([])
@@ -20,6 +21,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <Nav />
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/jumps" element={<Jumps jumps={jumps}/>} />
