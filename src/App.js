@@ -13,7 +13,7 @@ function App() {
     // console.log(response)
     setJumps(response)
     )
-  })
+  }, [])
 
   return (
     <div className="App">
