@@ -1,5 +1,6 @@
 import React from 'react'
 import {NavLink} from 'react-router-dom'
+import GoBack from './GoBack'
 
 function Nav() {
   return (
@@ -9,6 +10,7 @@ function Nav() {
         <NavLink to='/vanessa' style={({ isActive }) => ({color: isActive ? "green" : "blue"})}> Vanessa </NavLink>
         <NavLink to='/darshana' style={({ isActive }) => ({color: isActive ? "green" : "blue"})}> Darshana </NavLink>
         <NavLink to='/jumps' style={({ isActive }) => ({color: isActive ? "green" : "blue"})}> Jumps </NavLink>
+        <GoBack />
     </div>
   )
 }

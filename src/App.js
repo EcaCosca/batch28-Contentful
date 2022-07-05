@@ -9,6 +9,7 @@ import Nav from './components/Nav';
 import Alex from './components/Alex';
 import Vanessa from './components/Vanessa';
 import Darshana from './components/Darshana';
+import Params from './components/Params';
 
 function App() {
   const [jumps, setJumps] = useState([])
@@ -31,6 +32,7 @@ function App() {
           <Route path="/alex" element={<Alex />} />
           <Route path="/vanessa" element={<Vanessa />} />
           <Route path="/darshana" element={<Darshana />} />
+          <Route path="/params/:user" element={<Params />} />
         </Routes>
       </header>
     </div>
