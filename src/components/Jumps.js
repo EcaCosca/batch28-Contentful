@@ -7,7 +7,7 @@ const Jumps = ({jumps}) => {
         <p>{jump.description}</p>
         <ul>
             <li>Lat:{jump.exit.lat}</li>
-            <li>Lng:{jump.exit.lng}</li>
+            <li>Lon:{jump.exit.lon}</li>
         </ul>    
     </div>
     )

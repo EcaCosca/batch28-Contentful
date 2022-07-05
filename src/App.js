@@ -4,6 +4,7 @@ import './App.css';
 import useContentful from './components/useContentful';
 import Jumps from './components/Jumps';
 import {Routes, Route} from 'react-router-dom'
+import Home from './components/Home';
 
 function App() {
   const [jumps, setJumps] = useState([])
