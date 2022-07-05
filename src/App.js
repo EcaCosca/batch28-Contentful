@@ -6,6 +6,9 @@ import Jumps from './components/Jumps';
 import {Routes, Route} from 'react-router-dom'
 import Home from './components/Home';
 import Nav from './components/Nav';
+import Alex from './components/Alex';
+import Vanessa from './components/Vanessa';
+import Darshana from './components/Darshana';
 
 function App() {
   const [jumps, setJumps] = useState([])
@@ -25,6 +28,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home/>} />
           <Route path="/jumps" element={<Jumps jumps={jumps}/>} />
+          <Route path="/alex" element={<Alex />} />
+          <Route path="/vanessa" element={<Vanessa />} />
+          <Route path="/darshana" element={<Darshana />} />
         </Routes>
       </header>
     </div>
